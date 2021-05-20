@@ -1,0 +1,19 @@
+Data Sources
+
+
+#FCC DATABASE (I needed to use anonymous ftp to manually download!  Yuck!  But I got the files!)
+https://www.fcc.gov/uls/transactions/daily-weekly#fcc-uls-transaction-files-weekly    (l_amat/EN.dat)
+
+I have a python3 script (convertEN.py) that converted/cleaned the EN.dat into EN.csv
+and the zipcodes into their respective csv file.
+
+#I had to log in to Kaggle to nab this file.  It allows me to match zipcodes with probable counties.
+#When a zipcode crosses counties, it takes the one with the "most" in some sense.
+https://www.kaggle.com/danofer/zipcodes-county-fips-crosswalk
+
+#And I still needed this file to give me a master list of all the counties,
+#because otherwise the map turns ugly "gray" in the counties without data.
+https://github.com/kjhealy/fips-codes/blob/master/county_fips_master.csv
+
+# 88's  DE N2SZ
+# AKA Donna Dietz
